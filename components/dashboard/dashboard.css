@@ -1,0 +1,66 @@
+.business-header {
+    height: 400px;
+    background: url('../../images/design-custom-tshirts-banner.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.tagline {
+    margin-top: 200px;
+    text-shadow: 0 0 10px #000;
+    background-color: transparent;
+    color: blue;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.main-content {
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    word-wrap: break-word;
+}
+
+.athenista-content {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.athenista-content .athenista-header {
+    padding: 16px;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    color: green;
+    word-wrap: break-word;
+}
+
+.athenista-content .athenista-image {
+    border: 2px solid #FFFFFF;
+}
+
+.headline {
+    color: blue;
+}
+
+.adjust-margin {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.caption {
+    background-color: #cbcbcb;
+    border-bottom: solid 2px #F0D;
+    box-shadow: 0 20px 8px -8px #5b5b5b;
+}
+
+.done {
+    background-color: #2cbc2c;
+}
+
+.pending {
+    background-color: #ffa3a3;
+}

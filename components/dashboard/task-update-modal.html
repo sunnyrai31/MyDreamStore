@@ -1,0 +1,41 @@
+<!-- Modal -->
+<div class="modal fade" id="task-update-modal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title">Update task</h4></center>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <form>
+              <div class="form-group">
+                <label for="title">Title <span class="red-sign"> * </span></label>
+                <input ng-model="selectedTask.title" type="text" class="form-control" id="title" placeholder="Task Title" required>
+              </div>
+              <div class="form-group">
+                <label for="description">Description <span class="red-sign"> * </span></label>
+                <input ng-model="selectedTask.description" type="text" class="form-control" id="description" placeholder="Enter Description" required>
+              </div>
+              <div class="form-group">
+                <label for="ifsc">IFSC <span class="red-sign"> * </span></label>
+                <input ng-model="selectedTask.ifsc" type="text" class="form-control" id="ifsc" placeholder="Enter IFSC" required>
+              </div>
+              <div class="form-group">
+                <label for="deadline">DeadLine <span class="red-sign"> * </span></label>
+                <input ng-model="selectedTask.deadline" type="text" class="form-control" id="deadline" placeholder="Enter DeadLine" required>
+              </div>
+              <center>
+                <button type="submit" class="btn btn-primary">Update Task</button>
+              </center>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

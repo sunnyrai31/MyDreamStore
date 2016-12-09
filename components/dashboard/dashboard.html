@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="components/dashboard/dashboard.css">
+
+<div class="container">
+	<!--=== Slider ===-->
+	<div class="business-header" ng-if="taskList.length === 0">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-lg-12">
+	                <h1 class="tagline"></h1>
+	                <small></small>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!--=== End Slider ===-->
+
+	<!--=== Content Block ===-->
+	<div class="main-content">
+		<div class="row" ng-if="taskList.length === 0">
+			<div class="col-md-offset-4 col-md-4">
+				<center >
+					<button class="btn btn-lg btn-success" ng-click="createTask()">
+						Create Task
+					</button>
+				</center>
+			</div>
+		</div>
+		<!-- Page Features -->
+        <div class="row text-center" ng-if="taskList.length !== 0">
+
+            <div class="col-md-3 col-sm-6 hero-feature" ng-repeat="task in taskList">
+                <div class="thumbnail">
+                    <div class="caption" ng-class="task.status==='done'? 'done' : 'pending'">
+                        <h3>{{task.title}}</h3>
+                        <p>{{task.description}}</p>
+                        <p>{{task.deadline}}</p>
+                        <p>
+                            <button href="" class="btn btn-danger">Delete</button> 
+
+                            <button ng-click="selectTask(task)"ng-if="task.status === 'pending'" class="btn btn-default" data-toggle="modal" data-target="#task-update-modal">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- /.row -->
+	</div>
+</div>
+
+ <div ng-include src="'components/dashboard/task-update-modal.html'"></div>
+	
+
